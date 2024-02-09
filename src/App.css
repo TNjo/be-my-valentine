@@ -1,38 +1,102 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+@font-face {
+  font-family: 'Valentine';
+  src: url('./BunchBlossomsPersonalUse-0nA4.ttf') format('truetype');
+  /* Add more src lines for different font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.yes-button {
+  margin-bottom: 10%;
+  background-color: green;
+  border-radius: 20px;
+  border-width: 5px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+
+.no-button {
+  position: absolute;
+  background-color: red;
+  top: 60%;
+  border-radius: 20px;
+  font-size: 30px;
+  border-width: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.head{
+  font-family: 'Valentine', sans-serif;
+  position: absolute;
+  top: 0%;
+  font-size: 50px;
+  color: red;
+}
+.heart-image {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 70%;
+  background-image: url('./Love.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  
+  .head {
+    font-size: 30px;
+    
+    /* Adjusted position for mobile */
   }
-  to {
-    transform: rotate(360deg);
+    .heart-image {
+      position: absolute;
+      top: 25%;
+      left: 1%;
+      width: 100%;
+      height: 50%;
+      background-image: url('./Love.gif');
+      /* Path to your heart image */
+      background-size: cover;
+      /* Cover the entire container with the background image */
+      background-repeat: no-repeat;
+      /* Do not repeat the background image */
+    }
+}
+
+@media (max-width: 576px) {
+
+  .head {
+    font-size: 25px;
+
+    /* Adjusted position for mobile */
+  }
+
+  .heart-image {
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    width: 100%;
+    height: 50%;
+    background-image: url('./Love.gif');
+    /* Path to your heart image */
+    background-size: cover;
+    /* Cover the entire container with the background image */
+    background-repeat: no-repeat;
+    /* Do not repeat the background image */
   }
 }
+
+
